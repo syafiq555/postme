@@ -10,7 +10,7 @@
   <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div class="d-flex justify-content-end mb-2">
-        <button class="btn btn-success">Create</button>
+        <a href="{{ route('create_post') }}" class="btn btn-success">Create</a>
       </div>
       @foreach ($data as $post)
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -19,7 +19,7 @@
               {{ $post->title }}
             </div>
             <div>
-              <button class="btn btn-primary">edit</button>
+              <a href="{{ route('edit_post') }}" class="btn btn-primary">edit</a>
               <button class="btn btn-danger">delete</button>
             </div>
           </div>

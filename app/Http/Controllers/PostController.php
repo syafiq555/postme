@@ -26,7 +26,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -59,7 +59,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('posts.edit');
     }
 
     /**
@@ -82,6 +82,6 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return redirect()->route('posts');
     }
 }
